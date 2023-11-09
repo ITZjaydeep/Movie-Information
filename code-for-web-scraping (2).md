@@ -1,10 +1,13 @@
-<center><h1>Scraping LeetCode Problem Details Using Python, Selenium & BeautifulSoup</h1></center>
+<center><h1 align="center">Scraping LeetCode Problem Details Using Python, Selenium & BeautifulSoup</h1></center>
 
-<center>
-    <a href="https://leetcode.com/">
-         <img src="https://i.imgur.com/9aLyuqU.png" width=100px style="box-shadow:rgba(52, 64, 77, 0.2) 0px 1px 5px 0px;border-radius:4px;">
-    </a>
-</center>
+<p align="center">
+  <a href="https://leetcode.com/">
+    <img src="https://i.imgur.com/9aLyuqU.png" width="100px" style="box-shadow: rgba(52, 64, 77, 0.2) 0px 1px 5px 0px; border-radius: 4px;">
+  </a>
+</p>
+
+
+
 
 <h2> Web Scraping </h2>
 
@@ -42,23 +45,9 @@
 - Second we will scrape the problem information from every problem page.
 - we needed to scrape 2900+ problem pages because we have 2900+ problems.
 
-<div style="display: flex;">
-  <div style="flex: 1; margin-right: 10px;">
-    <a href="https://leetcode.com/problems/4sum/">
-      <img src="https://i.imgur.com/5BwD2nb.png" style="box-shadow:rgba(52, 64, 77, 0.2) 0px 1px 5px 0px;border-radius:10px;width: 33%;">
-    </a>
-  </div>
-  <div style="flex: 1; margin-right: 10px;">
-    <a href="https://leetcode.com/problems/4sum/">
-      <img src="https://i.imgur.com/ozWPDVj.png" style="box-shadow:rgba(52, 64, 77, 0.2) 0px 1px 5px 0px;border-radius:10px;width: 33%;">
-    </a>
-  </div>
-  <div style="flex: 1;">
-    <a href="https://leetcode.com/problems/4sum/">
-      <img src="https://i.imgur.com/QETFefW.png" style="box-shadow:rgba(52, 64, 77, 0.2) 0px 1px 5px 0px;border-radius:10px;width: 33%;">
-    </a>
-  </div>
-</div>
+| [![Image 1](https://i.imgur.com/5BwD2nb.png)](https://leetcode.com/problems/4sum/) | [![Image 2](https://i.imgur.com/ozWPDVj.png)](https://leetcode.com/problems/4sum/) | [![Image 3](https://i.imgur.com/QETFefW.png)](https://leetcode.com/problems/4sum/) |
+|---|---|---|
+
 
 **The details we are scraping from the second section are:**
 
@@ -80,7 +69,7 @@
 - Combine both part of The DataFrame.
 - Analyzing Data Availability
 
-<h2> Scraping First Section: </h2>
+<h2 align="center"> Scraping First Section: </h2>
 
 `Importing And Installing Relevant Libraries`:
 
@@ -424,7 +413,7 @@ df1['solution_URL'] = df1['problem_URL'].apply(lambda x: f'{x}{"/solution"}')
 
 <img src="https://i.imgur.com/Z70wkgZ.png">
 
-<h2> Scraping Second Section: </h2>
+<h2 align="center"> Scraping Second Section: </h2>
 
 1. `get_title(page_source)`:
    - Extracts the title from the given page source.`
@@ -841,7 +830,7 @@ scrape(df1, start=1, end=5, file_name='x2.csv')
 
 <img src="https://i.imgur.com/kKCZWQy.png">
 
-<h2> Third Section </h2>
+<h2 align="center"> Third Section </h2>
 
 <p> Combine Both Part of The DataFrame: </p>
 
