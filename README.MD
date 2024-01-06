@@ -1,3 +1,46 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mover accent="true">
+      <mi>y</mi>
+      <mo>^</mo>
+    </mover>
+    <mo>=</mo>
+    <msub>
+      <mi>&#x3B8;</mi>
+      <mn>0</mn>
+    </msub>
+    <mo>+</mo>
+    <msub>
+      <mi>&#x3B8;</mi>
+      <mn>1</mn>
+    </msub>
+    <msub>
+      <mi>x</mi>
+      <mn>1</mn>
+    </msub>
+    <mo>+</mo>
+    <msub>
+      <mi>&#x3B8;</mi>
+      <mn>2</mn>
+    </msub>
+    <msub>
+      <mi>x</mi>
+      <mn>2</mn>
+    </msub>
+    <mo>+</mo>
+    <mo>&#x22EF;</mo>
+    <mo>+</mo>
+    <msub>
+      <mi>&#x3B8;</mi>
+      <mi>n</mi>
+    </msub>
+    <msub>
+      <mi>x</mi>
+      <mi>n</mi>
+    </msub>
+  </mrow>
+</math>
+
 # Movie Information
 
 ## ABSTRACT
