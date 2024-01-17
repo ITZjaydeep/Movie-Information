@@ -36,7 +36,7 @@ $$ Ŷ = X\hat{\beta} $$
 
 $$ \hat{\beta} = (XᵀX)⁻¹XᵀY $$
 
-### GD
+### Gradient Descent
 
 $$ Y = β₀ + β₁X₁ + β₂X₂ + β₃X₃ + ... + βₖXₖ + ε $$
 
@@ -52,11 +52,9 @@ $$ \nabla J(\theta) = \begin{bmatrix}
 \end{bmatrix}
 $$
 
+#### Batch Gradient Descent
+
 $$\\theta_{\text{new}} = \theta_{\text{old}} - \alpha \cdot \nabla J(\theta_{\text{old}})\$$
-
-$$\\theta_{\text{new}} = \theta_{\text{old}} - \alpha \cdot \nabla J(\theta^{(i)})\$$
-
-$$\\theta_{\text{new}} = \theta_{\text{old}} - \alpha \cdot \nabla J(\theta_{\text{old}}, \text{Mini-Batch})\$$
 
 $$\\frac{\partial J(\theta)}{\partial \theta_0} = \frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})$$
 
@@ -64,7 +62,25 @@ $$\\frac{\partial J(\theta)}{\partial \theta_1} = \frac{1}{m}\sum_{i=1}^{m}[(h_{
 
 $$\\frac{\partial J(\theta)}{\partial \theta_k} = \frac{1}{m}\sum_{i=1}^{m}[(h_{\theta}(x^{(i)}) - y^{(i)}) \cdot x_k^{(i)}]$$
 
+#### Stochastic Gradient Descent
+
+$$\\theta_{\text{new}} = \theta_{\text{old}} - \alpha \cdot \nabla J(\theta^{(i)})\$$
+
+$$\\frac{\partial J(\theta)}{\partial \theta_0} = \frac{1}{m}(h_{\theta}(x^{(i)}) - y^{(i)})$$
+
+$$\\frac{\partial J(\theta)}{\partial \theta_1} = \frac{1}{m}[(h_{\theta}(x^{(i)}) - y^{(i)}) \cdot x_1^{(i)}]\$$
+
+$$\\frac{\partial J(\theta)}{\partial \theta_k} = \frac{1}{m}[(h_{\theta}(x^{(i)}) - y^{(i)}) \cdot x_k^{(i)}]$$
+
+#### Mini Batch Gradient Descent
+
 $$\\theta_{\text{new}} = \theta_{\text{old}} - \alpha \cdot \nabla J(\theta_{\text{old}}, \text{Mini-Batch})\$$
+
+$$\\frac{\partial J(\theta)}{\partial \theta_0} = \frac{1}{batch_size}\sum_{i=1}^{batch_size}(h_{\theta}(x^{(i)}) - y^{(i)})\$$
+
+$$\\frac{\partial J(\theta)}{\partial \theta_1} = \frac{1}{batch_size}\sum_{i=1}^{batch_size}[(h_{\theta}(x^{(i)}) - y^{(i)}) \cdot x_1^{(i)}]\$$
+
+$$\\frac{\partial J(\theta)}{\partial \theta_k} = \frac{1}{batch_size}\sum_{i=1}^{batch_size}[(h_{\theta}(x^{(i)}) - y^{(i)}) \cdot x_k^{(i)}]\$$
 
 ### Regression Analysis
 
